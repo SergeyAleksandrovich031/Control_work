@@ -12,3 +12,28 @@
 ## [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 ## [“Russia”, “Denmark”, “Kazan”] → []
 
+string[] array =  ["Russia", "Denmark", "Kazan"];  // строка с данными 
+int count = 0;                                     // вводим начальное значение счетчика count
+for (int i = 0; i < array.Length; i++)             // запускаем цикл 
+{
+   if(array[i].Length < 4)                         // задаём условие цикла
+    {
+       count++;                                    // счетчик с прибавлением +1
+    } 
+} 
+string[] result = new string[count];               // вывод новой строки с полученными значениями счетчика
+
+int j = 0;                                         // ввод переменной j
+for (int i = 0; i < array.Length; i++)             // запускаем цикл с  ограничением кол-ва символов до 4х, т.е. 3
+{
+    if(array[i].Length<4)
+    {
+        result[j]=array[i];
+        j++;
+    }
+}
+
+for (int i = 0; i < result.Length; i++)             
+{
+   Console.Write($"{result[i]}\t");               // выполняя условие цикла выводим значение в консоль.
+}
