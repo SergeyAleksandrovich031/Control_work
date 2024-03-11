@@ -31,7 +31,7 @@ for (int i = 0; i < array.Length; i++)              // запускаем цик
 } 
 string[] result = new string[count];                // вывод новой строки с полученными значениями счетчика, подсчет символов
 
-int j = 0;                                          // ввод переменной j
+int j = 0;                                          // ввод переменной j для создания массива по заданным параматрам
 for (int i = 0; i < array.Length; i++)              // запускаем цикл с  ограничением кол-ва символов до 4х, т.е. 3
 {
     if(array[i].Length<4)
@@ -43,7 +43,7 @@ for (int i = 0; i < array.Length; i++)              // запускаем цик
 
 for (int i = 0; i < result.Length; i++)             
 {
-   Console.Write($"{result[i]}\t");               // выполняя условие цикла выводим значение в консоль.
+   Console.Write($"{result[i]}\t");               // выполняя условие цикла выводим коенчный массив в консоль.
 }
 
 // internal class Program
