@@ -20,7 +20,7 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 [“Russia”, “Denmark”, “Kazan”] → []
 */
-string[] array =  ["Russia", "Denmark", "Kazan"];   // строка с данными 
+string[] array =  ["Russia", "Denmark", "Kazan", "Git"];   // строка с данными 
 int count = 0;                                      // вводим начальное значение счетчика count
 for (int i = 0; i < array.Length; i++)              // запускаем цикл 
 {
@@ -46,6 +46,7 @@ for (int i = 0; i < result.Length; i++)
    Console.Write($"{result[i]}\t");               // выполняя условие цикла выводим коенчный массив в консоль.
 }
 
+// Интересный вариант с обработкой всех вариантов вводимых массивов
 // internal class Program
 // {
 //     private static void Main(string[] args)
